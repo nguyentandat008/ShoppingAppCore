@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppCore", "ShoppingAppCore\ShoppingAppCore.csproj", "{47ABE5ED-B1F8-46B3-80ED-1A5483EE2427}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingAppCore", "ShoppingAppCore\ShoppingAppCore.csproj", "{47ABE5ED-B1F8-46B3-80ED-1A5483EE2427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppCore.Infrastructure", "ShoppingAppCore.Infrastructure\ShoppingAppCore.Infrastructure.csproj", "{EAC756CA-AD2D-4C07-AFF2-BAE000326338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppCore.Utilities", "ShoppingAppCore.Utilities\ShoppingAppCore.Utilities.csproj", "{D779CFDA-935C-48C9-A70F-2A2DE3B068B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppCore.Data", "ShoppingAppCore.Data\ShoppingAppCore.Data.csproj", "{A270AF4F-A1B6-42A6-9B49-E8158EEA7EEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppCore.Data.EF", "ShoppingAppCore.Data.EF\ShoppingAppCore.Data.EF.csproj", "{5BEBAD17-3707-49DE-B247-2B59CE020B07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingAppCore.Application", "ShoppingAppCore.Application\ShoppingAppCore.Application.csproj", "{6DEAA1C0-04D1-40A8-AFF3-96066FEDB123}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{1F13B020-6C51-415E-83D5-EF94DEBB8AA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{71342B86-718A-450E-BC36-BCD0A975DCEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{9EAF1ECA-49DD-4E45-95F8-EB1EADEAE068}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{11110082-E8B3-4E46-B1B0-770A4EF7F929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +33,37 @@ Global
 		{47ABE5ED-B1F8-46B3-80ED-1A5483EE2427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47ABE5ED-B1F8-46B3-80ED-1A5483EE2427}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47ABE5ED-B1F8-46B3-80ED-1A5483EE2427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC756CA-AD2D-4C07-AFF2-BAE000326338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC756CA-AD2D-4C07-AFF2-BAE000326338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC756CA-AD2D-4C07-AFF2-BAE000326338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC756CA-AD2D-4C07-AFF2-BAE000326338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D779CFDA-935C-48C9-A70F-2A2DE3B068B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D779CFDA-935C-48C9-A70F-2A2DE3B068B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D779CFDA-935C-48C9-A70F-2A2DE3B068B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D779CFDA-935C-48C9-A70F-2A2DE3B068B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A270AF4F-A1B6-42A6-9B49-E8158EEA7EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A270AF4F-A1B6-42A6-9B49-E8158EEA7EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A270AF4F-A1B6-42A6-9B49-E8158EEA7EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A270AF4F-A1B6-42A6-9B49-E8158EEA7EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BEBAD17-3707-49DE-B247-2B59CE020B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BEBAD17-3707-49DE-B247-2B59CE020B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BEBAD17-3707-49DE-B247-2B59CE020B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BEBAD17-3707-49DE-B247-2B59CE020B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEAA1C0-04D1-40A8-AFF3-96066FEDB123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEAA1C0-04D1-40A8-AFF3-96066FEDB123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEAA1C0-04D1-40A8-AFF3-96066FEDB123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEAA1C0-04D1-40A8-AFF3-96066FEDB123}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47ABE5ED-B1F8-46B3-80ED-1A5483EE2427} = {1F13B020-6C51-415E-83D5-EF94DEBB8AA9}
+		{EAC756CA-AD2D-4C07-AFF2-BAE000326338} = {11110082-E8B3-4E46-B1B0-770A4EF7F929}
+		{D779CFDA-935C-48C9-A70F-2A2DE3B068B3} = {11110082-E8B3-4E46-B1B0-770A4EF7F929}
+		{A270AF4F-A1B6-42A6-9B49-E8158EEA7EEB} = {9EAF1ECA-49DD-4E45-95F8-EB1EADEAE068}
+		{5BEBAD17-3707-49DE-B247-2B59CE020B07} = {9EAF1ECA-49DD-4E45-95F8-EB1EADEAE068}
+		{6DEAA1C0-04D1-40A8-AFF3-96066FEDB123} = {71342B86-718A-450E-BC36-BCD0A975DCEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6BCBC12A-20A8-4484-B29C-E3EE791DDABE}
